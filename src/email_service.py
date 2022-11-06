@@ -1,7 +1,7 @@
 import smtplib
 import ssl
 
-from notification_message import get_message
+from src.notification_message import get_message
 
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls

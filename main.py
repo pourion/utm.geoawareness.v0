@@ -1,8 +1,8 @@
 from vpython import scene, box, color, vec, vector, sphere, rate
-from utils import add_region_of_interest, setup_world, check_drone_intrusion
-from drone import add_drone, move_drone
-from user_controls import setup_user_controls, update_region_of_interest
-from email_service import send_email_alert
+from src.utils import add_region_of_interest, setup_world, check_drone_intrusion
+from src.drone import add_drone, move_drone
+from src.user_controls import setup_user_controls, update_region_of_interest
+from src.email_service import send_email_alert
 
 world = setup_world()
 

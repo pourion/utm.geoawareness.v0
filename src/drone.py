@@ -1,5 +1,5 @@
 from vpython import scene, box, color, vec, vector, sphere, rate
-from utils import add_region_of_interest
+from src.utils import add_region_of_interest
 
 
 def add_drone(
