@@ -1,5 +1,5 @@
-# Airport GUI
-This repository is for the user interface that visualizes the airport world and the UAV detection system. 
+# Digital Twin for Geo-awareness Service
+This repository is for the user interface that visualizes a rectangular user-defined airspace, the UAV detection, and the notification system. 
 
 # Installation 
 
@@ -16,6 +16,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 ```
+(note if you installed `virtualenv` within another `conda` environment the bash file will be at `/home/<you username>/miniconda3/bin/virtualenvwrapper.sh`)
+
+
 3. Run `source ~/.bashrc` 
 4. Create a virtual environment (replace <VIRTUAL_ENVIRONMENT_NAME> with your name of interest)
 ```
@@ -31,6 +34,6 @@ workon <VIRTUAL_ENVIRONMENT_NAME>
 
 To nstall dependencies, run the following command from root directory of this repository from the virtual environment your created above. 
 ```
-work on <VIRTUAL_ENVIRONMENT_NAME>
+workon <VIRTUAL_ENVIRONMENT_NAME>
 pip install -r requirements.txt
 ``` 
