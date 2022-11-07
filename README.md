@@ -1,4 +1,4 @@
-# Digital Twin for Geo-awareness Service
+# Digital Twin for Geo-Awareness Service
 This repository is a basic geo-awareness service with a simple graphical user interface that visualizes a rectangular user-defined airspace, UAV detection, and a notification system.
 
 # Installation 
