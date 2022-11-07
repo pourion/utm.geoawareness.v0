@@ -9,13 +9,6 @@ sender_email = "utm.geoawareness@gmail.com"
 gmail_generated_app_password = "fosgnogvrbeszhnf"
 
 receiver_email = "p.a.mistani@gmail.com"  # Enter receiver address
-# message = """\
-# Subject: Intrusion Alert
-
-# A drone entered your region of interest. 
-
-# Drone Awareness notification service.
-# """
 
 
 
@@ -24,10 +17,12 @@ def send_email_alert(receiver_email):
     # Create a secure SSL context
     context = ssl.create_default_context()
 
+    # Get the intrusion message at the current time
+    message = get_message()
+
     # Try to log in to server and send email
     with smtplib.SMTP(smtp_server, port) as server:
         try:
-            message = get_message()
             server.ehlo()  # Can be omitted
             server.starttls(context=context)
             server.ehlo()  # Can be omitted
